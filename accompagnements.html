@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   const imgs=document.querySelectorAll('.logo-img');
   imgs.forEach(i=>i.src=LOGO_SRC);
   // Mark active nav link
-  const page=location.pathname.split('/').pop()||'index.html';
+  const page=location.pathname.split('/').pop()||'accompagnements.html';
   document.querySelectorAll('.nav-link').forEach(l=>{
     if(l.getAttribute('href')===page)l.classList.add('active-nav');
   });
